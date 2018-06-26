@@ -1,0 +1,70 @@
+<section id="servicios" class="container ">
+    <div class="section">
+        <div class="row">
+            <p class="colorC center-align">Encuentra el Centro Deportivo más Cercano a ti! </p>
+            <div #carousel class="carousel ubicacion " [ngClass]="{ 'initialized': showInitialized }" materialize="carousel" [materializeActions]="actions">
+                <a *ngFor="let url of imageURLs" class="carousel-item">
+                    <img class="responsive-img mobile-image" [src]="url">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="small material-icons" style="color: #26a69a;">location_on</i>
+                        </h2>
+                        <h5 class="center">Localización de Centros Deportivos</h5>
+
+                        <p class="light" style="text-align:justify;">Permite a los usuarios localizar los Centros Deportivos más cercanos a su ubicación, o visualizar todos los Centros Deportivos de la ciudad Loja.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="small material-icons" style="color: #26a69a;">search</i>
+                        </h2>
+                        <h5 class="center">Búsqueda de Centros Deportivos</h5>
+
+                        <p class="light" style="text-align:justify;">Permite a los usuarios buscar los centros deportivos por su nombre completo o solo por coincidencias.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="small material-icons" style="color: #26a69a;">perm_device_information</i>
+                        </h2>
+                        <h5 class="center">Información de los Centros Deportivos</h5>
+
+                        <p class="light" style="text-align:justify;">Los usuarios pueden visualizar toda la información del Centro Deportivo: Nombre, Dirección, Teléfonos, Horarios de Atención, Precios.</p>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="small material-icons" style="color: #26a69a;">perm_contact_calendar</i><br>
+
+                        </h2>
+                        <h5 class="center">Reserva de los Centros Deportivos</h5>
+                        <p class="light" style="text-align:justify;">Los usuarios podrán realizar las reservas de su Centro Deportivo de una manera más rápida y sencilla, desde la comodidad de su dispositvo móvil. <span class="pulse new badge red" data-badge-caption="Proximamente!!"></span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center-align">
+                <h3 class="header col s12 light white-text">Nunca es demasiado tarde para disfrutar de tu deporte favorito. Encuentra tu centro deportivo más cercano
+                    en "SiteSport".</h3>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" materialize="parallax">
+        <img src="../assets/imagenes/fondCanc.jpg" alt="Unsplashed background img 2" style="opacity: 0.8; transform: translate3d(-50%, 148.014px, 0px);">
+    </div>
+</div>

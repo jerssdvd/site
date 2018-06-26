@@ -1,0 +1,82 @@
+
+<div id="contactenos" class="container">
+    <div class="section">
+        <div class="row">
+            <p class="colorC center-align">¿Quiere ser parte de nuestra aplicación? </p>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="icon-block">
+                        <p class="center-align" style="font-size:16px; color:#26a69a;"> Haga clic en la ubicación de su empresa</p>
+                        <br>
+                        <app-map [lat]=lat [lng]=lng (infoCoordenadas)="getCoordenadas($event)"></app-map>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="icon-block">
+
+
+                        <form materialize #enviarForm="ngForm" *ngIf="active" (ngSubmit)="enviarDatos()">
+                            <p class="center-align" style="font-size:16px; color:#26a69a;"> Envíanos tus Datos</p>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_balance</i>
+                                <input name="nombreEmpresa" type="text" minlength="3" pattern="[a-zA-ZñÑ]+[a-zA-Z0-9 ñÑáéíóúÁÉÍÓÚ]{1,30}" maxlength="30"
+                                    name="nombreEmpresa" #nombre="ngModel" (blur)="mostrarNombre()" (keyup)="mostrarNombre()"
+                                    class="validate inputFormato" [(ngModel)]="empresa.nombreEmpresa" [disabled]="isDisabled?true:null"
+                                    required>
+                                <label data-success="Perfecto!" class="active" for="nombreEmpresa">Nombre de la Empresa</label>
+                            </div>
+                            <div class="mesajesError espacioMargenes">
+                                {{mensajeN}}
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">map</i>
+                                <input [value]="empresa.direccion" placeholder="Dirección de su empresa" id="first_name" type="text"
+                                    class="validate" disabled required>
+                                <label class="active" for="direccion">Dirección</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" name="email" class="validate inputFormato" [(ngModel)]="empresa.email" [disabled]="isDisabled?true:null"
+                                    #email="ngModel" (blur)="mensajesEmail()" (keyup)="mensajesEmail()" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                                    required>
+                                <label data-success="Perfecto!" class="active" for="email">Email</label>
+                            </div>
+                            <div class="mesajesError espacioMargenes">
+                                {{mensajeE}}
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">local_phone</i>
+                                <input id="telefono" type="number" name="telefono"  class="validate inputFormato" [(ngModel)]="empresa.telefono" #telefono="ngModel"
+                                    (blur)="mensajesTelefono()" (keyup)="mensajesTelefono()" required>
+                                <label data-success="Perfecto!" class="active" for="telefono">Teléfono</label>
+                            </div>
+                            <div class="mesajesError espacioMargenes">
+                                {{mensajeT}}
+                            </div>
+                            <div class="center-align">
+                                <button class="btn cyan waves-effect waves-light" style="background-color:#3ACCE1;" name="action" type="submit" [disabled]="enviarForm.invalid">Enviar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container center-align">
+            <div class="row center">
+                <h3 class="header col s12 light white-text">La aplicación
+                    <b>SiteSport</b> para ti. Disfruta junto a tu familia y amigos de una sana diversión.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" materialize="parallax">
+        <img src="../assets/imagenes/fondCanc.jpg" alt="Unsplashed background img 2" style="opacity: 0.8; transform: translate3d(-50%, 148.014px, 0px);">
+    </div>
+</div>

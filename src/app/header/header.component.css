@@ -1,0 +1,22 @@
+nav{
+    background-color: #2A2E43;
+}
+.btn-floating {
+    border-radius: 0 0 0 0;
+    width: 10em;
+    text-align: center;
+    background-color: #F5267F;
+}
+.letraNombre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 3em;
+    font-style: oblique;
+    
+}
+/*
+a:hover {
+    color: #a8a8a8;
+    padding-left: 15px;
+    border-bottom: 1px solid #ee6e73;
+}*/

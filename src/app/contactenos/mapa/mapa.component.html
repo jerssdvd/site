@@ -1,0 +1,6 @@
+<div class="row">
+  <agm-map  [latitude]="lat" [longitude]="lng" [zoom]="15" (mapClick)="escogerUbicacion($event)" >
+    <agm-marker *ngIf="locationChosen" [markerDraggable]="true" [latitude]="lat" [longitude]="lng" (dragEnd)="escogerUbicacion($event)" ></agm-marker>
+  </agm-map>
+</div>
+

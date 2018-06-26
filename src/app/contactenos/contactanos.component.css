@@ -1,0 +1,51 @@
+.contactenos{
+    background-color: #3E3E3E;
+} 
+.colorC{
+    color:#26a69a;
+    font-size:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    
+ }
+ 
+ .espacioMargenes{
+    margin-top: 0rem;
+}
+.espacioHeader{
+    margin-top: 4em;
+  }
+.inputFormato{
+    width: 80%;
+    border-radius: 1%;
+    padding-top: -2%;
+    padding-bottom: -2%;
+    font-size: 75%;
+}
+.colorLetra{
+    color: #4855AA;
+}
+.formulario{
+    width: 40em;
+    margin-left: 5em;
+    height: 0em;
+}
+.section1 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.letraImagen{
+    color: white !important;
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+  .espacioMargenes{
+    margin-top: -2%;
+    margin-left: 5em;
+}

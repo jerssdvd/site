@@ -1,0 +1,40 @@
+<!--NAV BAR-->
+<header>
+        <nav>
+                <div class="nav-wrapper">
+                    <img src="assets/imagenes/logo.png" class="hide-on-med-and-down responsive-img" style="width:3em; margin-left: 1em; margin-top:0.8em; height:3em"
+                        alt="">
+                    <mat-icon class="brand-logo hide-on-med-and-down" style="width:5em; margin-left: 0.2em; height:2em" svgIcon="icon-nombre"></mat-icon>
+                    <a href="#" materialize="sideNav" class='dropdown-button btn' data-activates="mobile-demo" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#principal" class>Inicio</a></li>
+                        <li><a href="#servicios" class="">Servicios</a></li>
+                        <li><a href="#acerca">Acerca de nosotros</a></li>
+                        <li><a href="#contactenos" class="btn-floating pulse">Unete a Nosotros</a></li>
+                    </ul>
+            
+                    <!-- Dropdown Structure-->
+                    <ul id="mobile-demo" class='side-nav'>
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img src="http://www.cesped-sintetico-greenfields.com/wp-content/uploads/2013/12/Sports-Turf-Header.jpg">
+                                </div>
+                                <img src="assets/imagenes/logo.png" class="responsive-img" style="width:3em; margin-left: 1em; margin-top:0.8em; height:3em"
+                                    alt="">
+                                <mat-icon class="brand-logo" style="width:5em; margin-left: 0.2em; height:2em" svgIcon="icon-nombre"></mat-icon>
+                                <a><span class="white-text">Búsca, Reserva y Divierte</span></a>
+                            </div>
+                        </li>
+                        <li><a class="waves-effect" (click)="closeModal()" href="#principal">Inicio</a></li>
+                        <li><a class="waves-effect" href="#servicios">Servicios</a></li>
+                        <li><a class="waves-effect" href="#contactenos">Unete a Nosotros</a>
+                        </li><li><a class="waves-effect" href="#acerca">Acerca de nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+</header>
+
+
